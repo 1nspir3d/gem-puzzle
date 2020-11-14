@@ -23,9 +23,9 @@ export default function createGems(arr, puzzle, size, time) {
       case 8:
         moveSize = 3;
         if (window.outerWidth > 445) {
-          gemElement.style.minWidth = '70px';
-          gemElement.style.minHeight = '70px';
-          document.querySelector('.menu').style.width = '90vw';
+          gemElement.style.minWidth = '75px';
+          gemElement.style.minHeight = '75px';
+          document.querySelector('.menu').style.width = '60vw';
         }
         if (i === 3 || i === 6) {
           row += 1;
@@ -34,10 +34,10 @@ export default function createGems(arr, puzzle, size, time) {
 
       case 15:
         moveSize = 4;
-        if (window.outerWidth > 445) {
-          gemElement.style.minWidth = '70px';
-          gemElement.style.minHeight = '70px';
-          document.querySelector('.menu').style.width = '90vw';
+        if (window.outerWidth < 445) {
+          gemElement.style.minWidth = '75px';
+          gemElement.style.minHeight = '75px';
+          document.querySelector('.menu').style.width = '60vw';
         }
         if (i === 4 || i === 8 || i === 12 || i === 16) {
           row += 1;
@@ -52,10 +52,10 @@ export default function createGems(arr, puzzle, size, time) {
         break;
       case 35:
         moveSize = 6;
-        if (window.outerWidth > 445) {
-          gemElement.style.minWidth = '65px';
-          gemElement.style.minHeight = '65px';
-          document.querySelector('.menu').style.width = '90vw';
+        if (window.outerWidth < 445) {
+          gemElement.style.minWidth = '70px';
+          gemElement.style.minHeight = '70px';
+          document.querySelector('.menu').style.width = '60vw';
         }
         gemElement.style.minWidth = '80px';
         gemElement.style.minHeight = '80px';
@@ -66,10 +66,10 @@ export default function createGems(arr, puzzle, size, time) {
         break;
       case 48:
         moveSize = 7;
-        if (window.outerWidth > 445) {
-          gemElement.style.minWidth = '55px';
-          gemElement.style.minHeight = '55px';
-          document.querySelector('.menu').style.width = '90vw';
+        if (window.outerWidth < 445) {
+          gemElement.style.minWidth = '65px';
+          gemElement.style.minHeight = '65px';
+          document.querySelector('.menu').style.width = '60vw';
         }
         gemElement.style.minWidth = '60px';
         gemElement.style.minHeight = '60px';
@@ -80,10 +80,10 @@ export default function createGems(arr, puzzle, size, time) {
 
       case 63:
         moveSize = 8;
-        if (window.outerWidth > 445) {
-          gemElement.style.minWidth = '50px';
-          gemElement.style.minHeight = '50px';
-          document.querySelector('.menu').style.width = '90vw';
+        if (window.outerWidth < 445) {
+          gemElement.style.minWidth = '60px';
+          gemElement.style.minHeight = '60px';
+          document.querySelector('.menu').style.width = '60vw';
         }
         gemElement.style.minWidth = '60px';
         gemElement.style.minHeight = '60px';
